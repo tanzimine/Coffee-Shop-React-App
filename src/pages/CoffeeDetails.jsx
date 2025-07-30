@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useLoaderData } from 'react-router-dom';
 import { Star, Clock, Users, MapPin, Coffee, ShoppingCart, CheckCircle, X } from 'lucide-react';
+import { addFavorite } from '../utils';
 
 const CoffeeDetails = () => {
     const { coffeeId } = useParams();
@@ -96,10 +97,16 @@ const CoffeeDetails = () => {
         return stars;
     };
 
+
     // Calculate total price
     const sizePrices = { small: 3, medium: 4, large: 5 };
     const totalPrice = sizePrices[orderForm.size] * orderForm.quantity;
 
+
+    // handle favorite btn click
+    const handleFavorite = (coffee) =>{
+        addFavorite(coffee);
+    }
     return (
         <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100 py-8">
             <div className="container mx-auto px-4">
@@ -233,7 +240,7 @@ const CoffeeDetails = () => {
                                 <ShoppingCart className="w-5 h-5" />
                                 Order Now
                             </button>
-                            <button className="btn btn-outline btn-lg">
+                            <button onClick={()=>handleFavorite(coffee)} className="btn btn-outline btn-lg">
                                 Add to Favorites
                             </button>
                         </div>

@@ -5,7 +5,7 @@ import { Outlet, useLoaderData, Link } from 'react-router';
 import Categories from '../components/Categories';
 const Home = () => {
     const categories = useLoaderData();
-    console.log(categories);
+    // console.log(categories);
     return (
         <div>
             <img src={bannerImg} alt="Banner" className="w-full max-h-96 object-cover rounded-md" />
