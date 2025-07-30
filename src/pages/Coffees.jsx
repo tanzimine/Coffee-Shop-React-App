@@ -12,12 +12,13 @@ const Coffees = () => {
     }, [category, coffees]);
 
     const handleSortByPopularity = () => {
+        //sorting by popularity
         const sorted = [...coffees].sort((a, b) => b.popularity - a.popularity);
         setAllCoffees(sorted);
     };
 
     const handleSortByRating = () => {
-        
+        //sort by rating
         const sorted = [...coffees].sort((a, b) => b.rating - a.rating);
         setAllCoffees(sorted);
     };
