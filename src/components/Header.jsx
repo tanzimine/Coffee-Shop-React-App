@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
+  const activeClass = 'text-orange-500 font-semibold';
+
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -14,19 +16,49 @@ const Header = () => {
             </svg>
           </div>
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/coffees">Coffees</Link></li>
-            <li><Link to="/dashboard">Dashboard</Link></li>
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) => isActive ? activeClass : undefined}
+              >Home</NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/coffees"
+                className={({ isActive }) => isActive ? activeClass : undefined}
+              >Coffees</NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/dashboard"
+                className={({ isActive }) => isActive ? activeClass : undefined}
+              >Dashboard</NavLink>
+            </li>
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost text-xl">COFFEE_SHOP</Link>
+        <NavLink to="/" className="btn btn-ghost text-xl">COFFEE_SHOP</NavLink>
       </div>
 
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/coffees">Coffees</Link></li>
-          <li><Link to="/dashboard">Dashboard</Link></li>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) => isActive ? activeClass : undefined}
+            >Home</NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/coffees"
+              className={({ isActive }) => isActive ? activeClass : undefined}
+            >Coffees</NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/dashboard"
+              className={({ isActive }) => isActive ? activeClass : undefined}
+            >Dashboard</NavLink>
+          </li>
         </ul>
       </div>
     </div>
