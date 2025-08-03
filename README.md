@@ -24,12 +24,12 @@ A modern, responsive React-based coffee shop application that allows users to ex
 
 ### 🛒 Order System
 <img width="539" height="841" alt="Screenshot 2025-08-03 at 12 12 18 AM" src="https://github.com/user-attachments/assets/b7a68cba-8f85-4d21-928d-dcf212d16a8f" />
-()
+
 *Interactive order placement with size selection and customer details*
 
 ### ✅ Order Confirmation
-(<img width="539" height="841" alt="Screenshot 2025-08-03 at 12 12 27 AM" src="https://github.com/user-attachments/assets/1e393ca8-f8ad-479e-a07b-a0383dc62301" />
-)
+<img width="539" height="841" alt="Screenshot 2025-08-03 at 12 12 27 AM" src="https://github.com/user-attachments/assets/1e393ca8-f8ad-479e-a07b-a0383dc62301" />
+
 *Beautiful order confirmation with detailed summary*
 
 ## 🌟 Features
