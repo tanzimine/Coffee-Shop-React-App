@@ -9,27 +9,26 @@ A modern, responsive React-based coffee shop application that allows users to ex
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![BrewCraft Home Page](<img width="1894" height="956" alt="Screenshot 2025-08-03 at 12 11 32 AM" src="https://github.com/user-attachments/assets/8627b14a-bc39-4a7c-b1d1-a6f3d44916e3" />
-)
-*Beautiful hero section with coffee exploration features*
+<img width="1894" height="956" alt="Screenshot 2025-08-03 at 12 11 32 AM" src="https://github.com/user-attachments/assets/8627b14a-bc39-4a7c-b1d1-a6f3d44916e3" />
+
 
 ### 🔐 Authentication
-![Sign In/Up Page](<img width="539" height="841" alt="Screenshot 2025-08-03 at 12 12 38 AM" src="https://github.com/user-attachments/assets/eefbe707-afa6-467b-be89-782934990bbb" />
-)
+<img width="539" height="841" alt="Screenshot 2025-08-03 at 12 12 38 AM" src="https://github.com/user-attachments/assets/eefbe707-afa6-467b-be89-782934990bbb" />
+
 *Clean authentication interface with Google OAuth integration*
 
 ### ☕ Coffee Details
-![Coffee Details Page]<img width="1828" height="1076" alt="Screenshot 2025-08-03 at 12 12 00 AM" src="https://github.com/user-attachments/assets/16b72f03-ce40-4b49-9370-b4b46928a6a6" />
-()
+<img width="1828" height="1076" alt="Screenshot 2025-08-03 at 12 12 00 AM" src="https://github.com/user-attachments/assets/16b72f03-ce40-4b49-9370-b4b46928a6a6" />
+
 *Comprehensive coffee information with nutrition facts and brewing instructions*
 
 ### 🛒 Order System
-![Order Form]<img width="539" height="841" alt="Screenshot 2025-08-03 at 12 12 18 AM" src="https://github.com/user-attachments/assets/b7a68cba-8f85-4d21-928d-dcf212d16a8f" />
+<img width="539" height="841" alt="Screenshot 2025-08-03 at 12 12 18 AM" src="https://github.com/user-attachments/assets/b7a68cba-8f85-4d21-928d-dcf212d16a8f" />
 ()
 *Interactive order placement with size selection and customer details*
 
 ### ✅ Order Confirmation
-![Order Confirmation](<img width="539" height="841" alt="Screenshot 2025-08-03 at 12 12 27 AM" src="https://github.com/user-attachments/assets/1e393ca8-f8ad-479e-a07b-a0383dc62301" />
+(<img width="539" height="841" alt="Screenshot 2025-08-03 at 12 12 27 AM" src="https://github.com/user-attachments/assets/1e393ca8-f8ad-479e-a07b-a0383dc62301" />
 )
 *Beautiful order confirmation with detailed summary*
 
