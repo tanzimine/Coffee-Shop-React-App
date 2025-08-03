@@ -34,6 +34,18 @@ const Header = () => {
                 className={({ isActive }) => isActive ? activeClass : undefined}
               >Dashboard</NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/signin"
+                className={({ isActive }) => isActive ? activeClass : undefined}
+              >Sign In</NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/signup"
+                className={({ isActive }) => isActive ? activeClass : undefined}
+              >Sign Up</NavLink>
+            </li>
           </ul>
         </div>
         <NavLink to="/" className="btn btn-ghost text-xl">COFFEE_SHOP</NavLink>
@@ -58,6 +70,18 @@ const Header = () => {
               to="/dashboard"
               className={({ isActive }) => isActive ? activeClass : undefined}
             >Dashboard</NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/signin"
+              className={({ isActive }) => isActive ? activeClass : undefined}
+            >Sign In</NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/signup"
+              className={({ isActive }) => isActive ? activeClass : undefined}
+            >Sign Up</NavLink>
           </li>
         </ul>
       </div>
