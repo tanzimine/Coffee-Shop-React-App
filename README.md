@@ -2,6 +2,32 @@
 
 A modern, responsive React-based coffee shop application that allows users to explore premium coffee collections, manage favorites, place orders, and discover their perfect coffee experience.
 
+## 🌐 Live Demo
+
+**[🚀 View Live Application](https://incandescent-sawine-a46ce6.netlify.app/)**
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+![BrewCraft Home Page](https://raw.githubusercontent.com/yourusername/brewcraft-coffee-shop/main/screenshots/home-page.png)
+*Beautiful hero section with coffee exploration features*
+
+### 🔐 Authentication
+![Sign In Page](https://raw.githubusercontent.com/yourusername/brewcraft-coffee-shop/main/screenshots/signin-page.png)
+*Clean authentication interface with Google OAuth integration*
+
+### ☕ Coffee Details
+![Coffee Details Page](https://raw.githubusercontent.com/yourusername/brewcraft-coffee-shop/main/screenshots/coffee-details.png)
+*Comprehensive coffee information with nutrition facts and brewing instructions*
+
+### 🛒 Order System
+![Order Form](https://raw.githubusercontent.com/yourusername/brewcraft-coffee-shop/main/screenshots/order-form.png)
+*Interactive order placement with size selection and customer details*
+
+### ✅ Order Confirmation
+![Order Confirmation](https://raw.githubusercontent.com/yourusername/brewcraft-coffee-shop/main/screenshots/order-confirmation.png)
+*Beautiful order confirmation with detailed summary*
+
 ## 🌟 Features
 
 ### 🏠 **Home Page**
@@ -145,7 +171,7 @@ src/
    ```
 
 6. **Open your browser**
-   Navigate to `http://localhost:3000`
+   Navigate to `http://localhost:3000` or check out the [live demo](https://incandescent-sawine-a46ce6.netlify.app/)
 
 ## 📊 Data Structure
 
@@ -262,6 +288,11 @@ src/
 
 ## 🚀 Deployment
 
+### **Live Application**
+🌐 **[View Live Demo](https://incandescent-sawine-a46ce6.netlify.app/)**
+
+The application is currently deployed on **Netlify** with automatic deployments from the main branch.
+
 ### **Build for Production**
 ```bash
 npm run build
@@ -269,8 +300,8 @@ npm run build
 yarn build
 ```
 
-### **Deployment Options**
-- **Netlify**: Connect GitHub repository for automatic deployments
+### **Other Deployment Options**
+- **Netlify**: ✅ Currently deployed - Connect GitHub repository for automatic deployments
 - **Vercel**: Zero-configuration deployment for React apps
 - **Firebase Hosting**: Integrated hosting with Firebase services
 - **AWS S3**: Static website hosting with CloudFront CDN
