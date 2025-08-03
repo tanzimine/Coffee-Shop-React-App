@@ -1,8 +1,39 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import { authContext } from '../layout/MainLayout';
 
 const Header = () => {
+  const auth = useContext(authContext);
+  const user = auth?.user;
+  const handleLogout = auth?.handleLogout;
   const activeClass = 'text-orange-500 font-semibold';
+
+  // Safety check - if context is not available, show basic navigation
+  if (!auth) {
+    return (
+      <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar-start">
+          <NavLink to="/" className="btn btn-ghost text-xl">COFFEE_SHOP</NavLink>
+        </div>
+        <div className="navbar-end hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) => isActive ? activeClass : undefined}
+              >Home</NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/coffees"
+                className={({ isActive }) => isActive ? activeClass : undefined}
+              >Coffees</NavLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -28,24 +59,39 @@ const Header = () => {
                 className={({ isActive }) => isActive ? activeClass : undefined}
               >Coffees</NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/dashboard"
-                className={({ isActive }) => isActive ? activeClass : undefined}
-              >Dashboard</NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/signin"
-                className={({ isActive }) => isActive ? activeClass : undefined}
-              >Sign In</NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/signup"
-                className={({ isActive }) => isActive ? activeClass : undefined}
-              >Sign Up</NavLink>
-            </li>
+            {user ? (
+              <>
+                <li>
+                  <NavLink
+                    to="/dashboard"
+                    className={({ isActive }) => isActive ? activeClass : undefined}
+                  >Dashboard</NavLink>
+                </li>
+                <li>
+                  <button 
+                    onClick={handleLogout}
+                    className="text-red-500 hover:text-red-700"
+                  >
+                    Logout
+                  </button>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <NavLink
+                    to="/signin"
+                    className={({ isActive }) => isActive ? activeClass : undefined}
+                  >Sign In</NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/signup"
+                    className={({ isActive }) => isActive ? activeClass : undefined}
+                  >Sign Up</NavLink>
+                </li>
+              </>
+            )}
           </ul>
         </div>
         <NavLink to="/" className="btn btn-ghost text-xl">COFFEE_SHOP</NavLink>
@@ -65,24 +111,39 @@ const Header = () => {
               className={({ isActive }) => isActive ? activeClass : undefined}
             >Coffees</NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/dashboard"
-              className={({ isActive }) => isActive ? activeClass : undefined}
-            >Dashboard</NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/signin"
-              className={({ isActive }) => isActive ? activeClass : undefined}
-            >Sign In</NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/signup"
-              className={({ isActive }) => isActive ? activeClass : undefined}
-            >Sign Up</NavLink>
-          </li>
+          {user ? (
+            <>
+              <li>
+                <NavLink
+                  to="/dashboard"
+                  className={({ isActive }) => isActive ? activeClass : undefined}
+                >Dashboard</NavLink>
+              </li>
+              <li>
+                <button 
+                  onClick={handleLogout}
+                  className="text-red-500 hover:text-red-700 font-medium"
+                >
+                  Logout
+                </button>
+              </li>
+            </>
+          ) : (
+            <>
+              <li>
+                <NavLink
+                  to="/signin"
+                  className={({ isActive }) => isActive ? activeClass : undefined}
+                >Sign In</NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/signup"
+                  className={({ isActive }) => isActive ? activeClass : undefined}
+                >Sign Up</NavLink>
+              </li>
+            </>
+          )}
         </ul>
       </div>
     </div>

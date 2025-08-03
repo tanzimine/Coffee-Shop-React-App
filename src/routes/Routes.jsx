@@ -9,6 +9,7 @@ import CoffeeCard from "../components/CoffeeCard";
 import CoffeeDetails from "../pages/CoffeeDetails";
 import Signin from "../pages/SignIn/Signin";
 import SignUp from "../pages/SignUp/SignUp";
+import PrivateRoute from "../pages/PrivateRoute/PrivateRoute";
 
 
 
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard",
-        element: <Dashboard></Dashboard>,
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
         loader: () => fetch("/coffees.json"),
       },
       {
