@@ -58,7 +58,7 @@ A modern, responsive React-based coffee shop application that allows users to ex
 - **Easy Management** - Add/remove favorites with toast notifications
 - **Visual Analytics** displaying your coffee preferences
 
-### 🔐 **Authentication System**
+### 🔐 **Authentication System** (Firebase)
 - **Email/Password Registration** with strong password validation
 - **Google OAuth Integration** for seamless sign-in
 - **Protected Routes** for authenticated features
