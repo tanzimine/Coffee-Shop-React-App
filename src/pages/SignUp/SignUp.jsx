@@ -24,58 +24,79 @@ const SignUp = () => {
         // console.log(email,password,conPassword)
         handleSignUp(email,password);
     }
+    
     return (
-        <div className="min-h-screen flex items-center justify-center bg-base-200">
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <div className="card-body">
-                    <h2 className="card-title justify-center text-2xl font-bold mb-6">Sign Up</h2>
-                    
-                    <form onSubmit={handleSubmit} className="space-y-4">
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Email</span>
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-50 via-white to-rose-50 py-12 px-4">
+            <div className="max-w-md w-full">
+                {/* Logo Section */}
+                <div className="text-center mb-8">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-amber-400 to-orange-600 rounded-2xl shadow-lg mb-6">
+                        <span className="text-white text-3xl font-bold">☕</span>
+                    </div>
+                    <h1 className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent mb-2">
+                        Join BrewCraft
+                    </h1>
+                    <p className="text-gray-600">Create your account to start exploring</p>
+                </div>
+
+                {/* Sign Up Form */}
+                <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                        <div>
+                            <label className="block text-sm font-semibold text-gray-700 mb-2">
+                                Email Address
                             </label>
                             <input 
                                 type="email" 
                                 name="email"
-                                placeholder="email@example.com" 
-                                className="input input-bordered" 
+                                placeholder="Enter your email" 
+                                className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200 bg-white text-gray-900 placeholder-gray-500" 
                                 required
                             />
                         </div>
                         
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Password</span>
+                        <div>
+                            <label className="block text-sm font-semibold text-gray-700 mb-2">
+                                Password
                             </label>
                             <input 
                                 type="password" 
                                 name="password"
-                                placeholder="••••••••" 
-                                className="input input-bordered" 
+                                placeholder="Create a strong password" 
+                                className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200 bg-white text-gray-900 placeholder-gray-500" 
                                 required
                             />
+                            <p className="text-xs text-gray-500 mt-1">
+                                Must contain: lowercase, uppercase, 2+ digits, and special character ($#%&)
+                            </p>
                         </div>
                         
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Confirm Password</span>
+                        <div>
+                            <label className="block text-sm font-semibold text-gray-700 mb-2">
+                                Confirm Password
                             </label>
                             <input 
                                 type="password" 
                                 name="conPassword"
-                                placeholder="••••••••" 
-                                className="input input-bordered" 
+                                placeholder="Confirm your password" 
+                                className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200 bg-white text-gray-900 placeholder-gray-500" 
                                 required
                             />
                         </div>
                         
-                        <button type="submit" className="btn btn-primary w-full">Sign Up</button>
+                        <button type="submit" className="w-full bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold py-3 rounded-xl hover:from-amber-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                            Create Account
+                        </button>
                     </form>
-                    
-                    <div className="mt-4 text-center text-sm text-gray-600">
-                        Already have an account? 
-                        <a href="/signin" className="link link-primary ml-1">Sign In</a>
+
+                    {/* Sign In Link */}
+                    <div className="text-center mt-6">
+                        <p className="text-gray-600">
+                            Already have an account?{' '}
+                            <a href="/signin" className="text-amber-600 hover:text-amber-700 font-semibold transition-colors">
+                                Sign in here
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>

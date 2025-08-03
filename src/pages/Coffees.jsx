@@ -25,11 +25,17 @@ const Coffees = () => {
 
     return (
         <>
-            <div className="flex justify-center gap-4 mb-4">
-                <button onClick={handleSortByPopularity} className="btn btn-outline">
+            <div className="flex justify-center gap-4 mb-8">
+                <button 
+                    onClick={handleSortByPopularity} 
+                    className="px-6 py-3 bg-white text-gray-700 font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 border-2 border-gray-200 hover:border-amber-300 hover:text-amber-700"
+                >
                     Sort by Popularity
                 </button>
-                <button onClick={handleSortByRating} className="btn btn-outline">
+                <button 
+                    onClick={handleSortByRating} 
+                    className="px-6 py-3 bg-white text-gray-700 font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 border-2 border-gray-200 hover:border-amber-300 hover:text-amber-700"
+                >
                     Sort by Rating
                 </button>
             </div>

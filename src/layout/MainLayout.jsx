@@ -96,13 +96,13 @@ const MainLayout = () => {
     loading,
   };
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-white">
       {/* Main content grows to fill available space */}
       <authContext.Provider value={authData}>
         <header>
           <Header></Header>
         </header>
-        <main className="flex-grow px-4 md:px-10 py-6">
+        <main className="flex-grow px-4 md:px-10 py-6 bg-white">
           <Outlet />
         </main>
       </authContext.Provider>
